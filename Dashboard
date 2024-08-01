@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Reloading Google Slides</title>
+  <script>
+    // Recarga el iframe cada 60 segundos (60000 milisegundos)
+    function reloadIframe() {
+      var iframe = document.getElementById('slidesIframe');
+      iframe.src = iframe.src; // Recarga la URL del iframe
+    }
+    setInterval(reloadIframe, 190000); // Cambia 60000 al intervalo deseado en milisegundos
+  </script>
+</head>
+<body>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSLz7JU_4aGp9LXLFfhknXwo_PJdfUFswStyXiZ_5YwgD7Ncmr3XyuUpLERtSsieWwNwAmDEXv3V6tp/embed?start=true&loop=true&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</body>
+</html>
